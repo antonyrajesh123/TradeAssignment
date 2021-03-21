@@ -49,7 +49,7 @@ public class TradeStoreValidatorUtilTest {
 	}
 	
 	@Test(expected = TradeVersionException.class)
-	public void whenExceptionThrown_thenExpectationSatisfied() throws TradeVersionException {
+	public void testTradeVersionException() throws TradeVersionException {
 		Trade trade1=new Trade("T1",1,"CP-1","B1",LocalDate.of(2020,5,20),LocalDate.of(2021,3,21));
 		Trade trade2=new Trade("T1",2,"CP-2","B1",LocalDate.of(2021,5,20),LocalDate.of(2021,3,21));
 		Map<String, Trade> tradesMap = new HashMap<String, Trade>();
