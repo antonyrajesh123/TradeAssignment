@@ -30,6 +30,7 @@ public class TradeStore {
 		tradesMap.entrySet().stream().forEach(trade-> System.out.println(trade));
 	}
 	
+	//Some verification
 	public static void main(String[] args) {
 		Trade trade1=new Trade("T1",1,"CP-1","B1",LocalDate.of(2020,5,20),LocalDate.of(2021,3,21));
 		Trade trade2=new Trade("T2",2,"CP-2","B1",LocalDate.of(2021,5,20),LocalDate.of(2021,3,21));
